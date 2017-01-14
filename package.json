@@ -1,0 +1,64 @@
+{
+  "name": "AwesomeProject",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "postinstall": "node_modules/.bin/rn-nodeify --install buffer,fs,events,util,stream,process,path --hack"
+  },
+  "dependencies": {
+    "asyncstorage-down": "3.0.0",
+    "buffer": "^3.6.0",
+    "events": "^1.1.1",
+    "https-browserify": "0.0.1",
+    "opentype.js": "^0.6.6",
+    "path-browserify": "0.0.0",
+    "process": "^0.11.9",
+    "react": "15.4.1",
+    "react-dom": "15.4.1",
+    "react-native": "0.39.2",
+    "react-native-crypto": "^2.0.1",
+    "react-native-level-fs": "^3.0.0",
+    "react-native-randombytes": "^2.2.0",
+    "react-native-svg": "^4.4.1",
+    "readable-stream": "^1.0.33",
+    "rn-nodeify": "^7.0.1",
+    "stream-browserify": "^1.0.0",
+    "svg-path-bounding-box": "^1.0.4",
+    "util": "^0.10.3"
+  },
+  "devDependencies": {
+    "babel-jest": "18.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "jest": "18.1.0",
+    "react-test-renderer": "15.4.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "react-native": {
+    "crypto": "react-native-crypto",
+    "https": "https-browserify",
+    "fs": "react-native-level-fs",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify",
+    "path": "path-browserify"
+  },
+  "browser": {
+    "crypto": "react-native-crypto",
+    "https": "https-browserify",
+    "fs": "react-native-level-fs",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify",
+    "path": "path-browserify"
+  }
+}

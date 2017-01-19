@@ -95,7 +95,7 @@ export default class VexFlow extends Component {
 
       stave.setContext(this._context).draw();
 
-      var formatter = new VF.Formatter().joinVoices([voice]).format([voice], width);
+      var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 50);
       voice.draw(this._context, stave);
     }
 

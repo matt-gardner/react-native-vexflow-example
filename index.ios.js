@@ -36,7 +36,8 @@ export default class AwesomeProject extends Component {
     ];
     var voice = new VF.Voice({num_beats: 4, beat_value: 4});
     voice.addTickables(notes);
-    var stave = new VF.Stave(0, 0, 200);
+    var width = 300
+    var stave = new VF.Stave(0, 0, width);
     stave.addClef("treble").addTimeSignature("4/4");
     return (
       <View style={styles.container}>
@@ -46,9 +47,10 @@ export default class AwesomeProject extends Component {
         <View>
           <VexFlow
             height={200}
-            width={200}
+            width={width}
             font={[ 'Arial', 10, '' ]}
             stave={stave}
+            notes={notes}
             voice={voice}
             />
         </View>

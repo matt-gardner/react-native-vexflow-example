@@ -95,7 +95,7 @@ export default class VexFlow extends Component {
 
       stave.setContext(this._context).draw();
 
-      var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 50);
+      var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 50, {stave: stave});
       voice.draw(this._context, stave);
     }
 
@@ -104,8 +104,8 @@ export default class VexFlow extends Component {
 
     render() {
       this.handleProps();
-      console.log(this._context.toSVG());
-          //{this._context.toSVG()}
+      var svg = this._context.toSVG();
+      console.log("Made SVG");
       return (
         <View>
           <Text>
